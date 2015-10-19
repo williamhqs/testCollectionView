@@ -32,7 +32,8 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("coffee_brand_cell", forIndexPath: indexPath) //as! AURCoffeeBrandCollectionViewCell
         let imageView = cell.contentView.viewWithTag(2) as? UIImageView
         
-        imageView?.image = UIImage(named: ["coffee1","coffee2","coffee3","coffee3"][indexPath.row])
+
+        imageView?.backgroundColor = UIColor.redColor()
         let name = cell.viewWithTag(3) as? UILabel
         name?.text = "nihao"
         
